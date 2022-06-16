@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="style3.css">
+    <!-- Font Awesome Iocns cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo">BigBoss<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+       <div class="container">
+           <div class="title">Registration</div>
+           <form action="#">
+               <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Enter your last name" required>
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Country</span>
+                    <input type="text" placeholder="Enter your Country" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">State/Province</span>
+                    <input type="text" placeholder="Enter your state/Province" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" placeholder="Confirm your password" required>
+                </div>
+               </div>
+               <div class="gender-details">
+                   <input type="radio" name="gender" id="dot-1">
+                   <input type="radio" name="gender" id="dot-2">
+                   <span class="gender-title">Gender</span>
+                   <div class="category">
+                       <label for="dot-1">
+                           <span class="dot one"></span>
+                           <span class="gender">Male</span>
+                       </label>
+                       <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                   </div>
+               </div>
+               <div class="button">
+                   <input type="submit" value="Register">
+               </div>
+           </form>
+       </div>
+    </section> 
+    <!----------JavaScript for Toggle Menu -------->   
+<script>
+
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+<!----------Footer -------->   
+<section class="Footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <div>
+        <i class="fas fa-copyright"></i>2022 All rights reserved.
+        <p>Created by The BigBoss Network<span>.</span></p>
+    </div>
+
+</section>
+
+
+
+
+
+</body>
+</html>

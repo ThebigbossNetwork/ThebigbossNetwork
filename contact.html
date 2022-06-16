@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Iocns cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo">BigBoss<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+        <div class="container">
+            <h1>Connect with me</h1>
+            <p>I would love to connect with my prospects</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="john Doe">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+234 810 239281">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="johnDoe@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Service needed">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>support@BigBoss.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+234 816 335 2367</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>10 Bama Road, Maiduguri, Borno State</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!----------JavaScript for Toggle Menu -------->   
+<script>
+
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+<!----------Footer -------->   
+<section class="Footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <div>
+        <i class="fas fa-copyright"></i>2022 All rights reserved.
+        <p>Created by The BigBoss Network<span>.</span></p>
+    </div>
+
+</section>
+
+
+
+
+
+</body>
+</html>

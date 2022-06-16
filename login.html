@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Iocns cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo">BigBoss<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+        <div class="center">
+            <h1>Login</h1>
+            <form type="post">
+                <div class="text_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="text_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Sign In">
+                <div class="signup_link">
+                    Not registered yet? <a href="#">Register</a>
+                </div>
+            </form>
+        </div>
+    </section> 
+    <!----------JavaScript for Toggle Menu -------->   
+<script>
+
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+
+<!----------Footer -------->   
+<section class="Footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <div>
+        <i class="fas fa-copyright"></i>2022 All rights reserved.
+        <p>Created by The BigBoss Network<span>.</span></p>
+    </div>
+
+</section>
+
+
+
+
+
+</body>
+</html>
